@@ -1,0 +1,23 @@
+figure;
+x1=[2 8 7 6 7 5 4];
+y1=[7 1 5 3 8 9 5];
+scatter(x1,y1,'red','filled');
+hold on;
+x2=[4 -1 1 3 5 2 7];
+y2=[2 -1 3 -2 3.25 4 1];
+scatter(x2,y2,'blue','filled');
+hold on;
+x=[-1:9];
+y1=(95-11*x)/10.75;
+plot(x,y1,'-r','MarkerSize',10);
+hold on;
+y2=(89-10*x)/10.5;
+plot(x,y2,'-g','MarkerSize',10);
+hold on;
+y3=(0.1004-0.0113*x)/0.0130;
+plot(x,y3,'-b','MarkerSize',10);
+hold on;
+y4=(-8-17*x)/62;
+plot(x,y4,'-k','MarkerSize',10);
+hold on;
+legend('Class 1','Class 2','Single-sample','Single-sample with margin','Relaxation-margin','LMS')
